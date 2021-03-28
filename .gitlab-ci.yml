@@ -1,0 +1,24 @@
+image:
+  name: docker/compose:latest
+  entrypoint: ["/bin/sh", "-c"]
+
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+
+services:
+  - docker:dind
+
+stages:
+  - build_images
+
+before_script:
+  - docker version
+  - docker-compose version
+  - docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY
+  - docker pull registry.gitlab.com/imerkle/grpckit:latest
+
+build:
+  stage: build_images
+  script:
+    - docker-compose up
