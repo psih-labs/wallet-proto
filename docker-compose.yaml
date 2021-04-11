@@ -9,6 +9,9 @@ services:
       - COMMIT_EMAIL=${GITLAB_USER_EMAIL}
       - DIND_WORKSPACE=${CI_PROJECT_DIR}
       - WORKSPACE_ROOT=/workspace/
+      - GIT_ORG=${CI_PROJECT_NAMESPACE}
+      - GIT_REPO=${CI_PROJECT_NAME}
+      - GIT_HOST=${CI_SERVER_HOST}
     volumes:
       - .:/workspace
       - /var/run/docker.sock:/var/run/docker.sock

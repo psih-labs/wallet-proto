@@ -1,11 +1,3 @@
-root: pb
-output: gen
-protoc_docker_image: registry.gitlab.com/imerkle/grpckit:latest
-git:
-  org: psih-labs
-  reporoot: repos
-  host: gitlab.com
-  branch: master
 sources:
 default_lang:
   - name: rust
