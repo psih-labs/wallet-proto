@@ -1,3 +1,4 @@
+root: pb
 sources:
 default_lang:
   - name: rust
