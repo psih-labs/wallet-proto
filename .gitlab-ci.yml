@@ -21,4 +21,4 @@ before_script:
 build:
   stage: build_images
   script:
-    - docker-compose up --exit-code-from=integration
+    - docker-compose up
