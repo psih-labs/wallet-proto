@@ -1,8 +1,4 @@
-git:
-  org: psih-labs
-  reporoot: repos
-  host: gitlab.com
-  branch: master
+output: gen
 sources:
 default_lang:
   - name: rust
