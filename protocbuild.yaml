@@ -1,3 +1,4 @@
+root: pb
 output: gen
 protoc_docker_image: registry.gitlab.com/imerkle/grpckit:latest
 git:
