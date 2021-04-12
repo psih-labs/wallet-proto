@@ -1,4 +1,3 @@
-sources:
 default_lang:
   - name: rust
   - name: dart
