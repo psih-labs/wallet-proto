@@ -13,5 +13,5 @@ jobs:
           CI_PROJECT_NAME: ${{ github.event.repository.name }}
           CI_SERVER_HOST: github.com
           GITLAB_USER_NAME: ${{ github.actor }}
-          GITLAB_USER_EMAIL: ${{ github.actor }}
+          GITLAB_USER_EMAIL: dsslimshaddy@gmail.com
           SSH_KEY: ${{ secrets.SSH_KEY }}
