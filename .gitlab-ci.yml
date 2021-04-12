@@ -21,4 +21,5 @@ before_script:
 build:
   stage: build_images
   script:
-    - docker-compose up
+    - export $PROTOCBUILD_IMAGE=registry.gitlab.com/imerkle/protocbuild:latest
+    - docker-compose up --exit-code-from protoc

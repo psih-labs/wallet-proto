@@ -1,7 +1,7 @@
 version: "3"
 services:
   protoc:
-    image: registry.gitlab.com/imerkle/protocbuild:latest
+    image: ${PROTOCBUILD_IMAGE}
     container_name: protoc
     environment:
       - SSH_KEY=${SSH_KEY}
