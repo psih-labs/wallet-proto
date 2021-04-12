@@ -1,8 +1,8 @@
 version: "3"
 services:
-  protoctest:
+  protoc:
     image: registry.gitlab.com/imerkle/protocbuild:latest
-    container_name: protoctest
+    container_name: protoc
     environment:
       - SSH_KEY=${SSH_KEY}
       - COMMIT_USER=${GITLAB_USER_NAME}
