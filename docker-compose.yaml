@@ -4,9 +4,6 @@ services:
     image: ${PROTOCBUILD_IMAGE}
     container_name: protoc
     environment:
-      - SSH_KEY=${SSH_KEY}
-      - COMMIT_USER=${GITLAB_USER_NAME}
-      - COMMIT_EMAIL=${GITLAB_USER_EMAIL}
       - DIND_WORKSPACE=${CI_PROJECT_DIR}
       - WORKSPACE_ROOT=/workspace/
       - GIT_ORG=${CI_PROJECT_NAMESPACE}
