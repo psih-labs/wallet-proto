@@ -9,6 +9,7 @@ services:
       - GIT_ORG=${CI_PROJECT_NAMESPACE}
       - GIT_REPO=${CI_PROJECT_NAME}
       - GIT_HOST=${CI_SERVER_HOST}
+      - GIT_TOKEN=${GIT_TOKEN}
     volumes:
       - .:/workspace
       - /var/run/docker.sock:/var/run/docker.sock

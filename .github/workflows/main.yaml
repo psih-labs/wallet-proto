@@ -13,3 +13,4 @@ jobs:
           CI_PROJECT_NAME: ${{ github.event.repository.name }}
           CI_SERVER_HOST: github.com
           PROTOCBUILD_IMAGE: ghcr.io/psih-labs/protocbuild:latest
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
